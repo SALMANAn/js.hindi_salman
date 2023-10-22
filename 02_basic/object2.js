@@ -75,7 +75,12 @@ console.log(instructor);
 // }
 
 [
-    {},
+    {
+       " name":"salman",
+        "coursename":"js hindi ",
+        "price":"999"
+
+    },
     {},
     {}
 ]
