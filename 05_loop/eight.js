@@ -23,6 +23,11 @@ const shoppingCart=[
         price:14999
 
     },
+    {
+        iemName:"data science",
+        price:14999
+
+    },
 
     
 ]
