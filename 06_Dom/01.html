@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Elements</title>
+</head>
+<body>
+    <div id="Id">Hello Dom</div>
+
+    <button id="click">
+        Click me!
+    </button>
+
+    <div class="parentElement"></div>
+
+    <script>
+        // Accessing an element by its ID
+        let myElement=document.getElementById('Id');
+        myElement.textContent='Hello Paaji Kaise ho'
+
+        let button=document.getElementById('click')
+
+            button.removeEventListener('click !' ,function(){
+            button.style.backgroundColor="red"
+
+        })
+
+        let parentElement=document.getElementById('parentElement')
+         
+        
+Certainly! Here are some key DOM (Document Object Model) topics with examples and explanations:
+
+1. Accessing DOM Elements:
+Example:
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessing DOM Elements</title>
+</head>
+<body>
+
+  <div id="myDiv">Hello, DOM!</div>
+
+  <script>
+    // Accessing an element by its ID
+    let myElement = document.getElementById('myDiv');
+
+    // Modifying the element's content
+    myElement.textContent = 'Hello, Updated DOM!';
+  </script>
+
+</body>
+</html>
+Explanation:
+The getElementById method is used to access an HTML element with the specified ID ('myDiv' in this case).
+The textContent property is then used to modify the content of the element.
+2. Manipulating DOM Elements:
+Example:
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulating DOM Elements</title>
+</head>
+<body>
+
+  <button id="myButton">Click me</button>
+
+  <script>
+    // Accessing the button element
+    let button = document.getElementById('myButton');
+
+    // Adding a click event listener
+    button.addEventListener('click', function() {
+      // Modifying the button's style
+      button.style.backgroundColor = 'red';
+    });
+  </script>
+
+</body>
+</html>
+Explanation:
+The addEventListener method is used to attach a click event listener to the button element.
+When the button is clicked, the specified function is executed, modifying the button's background color using the style property.
+3. Creating and Appending DOM Elements:
+Example:
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating and Appending DOM Elements</title>
+</head>
+<body>
+
+  <div id="parentElement"></div>
+
+  <script>
+    // Accessing the parent element
+    let parentElement = document.getElementById('parentElement');
+
+    // Creating a new paragraph element
+    let newParagaraph=document.create
+
+
+
+
+
+    </script>
+    
+</body>
+
+</html>
