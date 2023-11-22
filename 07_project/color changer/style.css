@@ -1,6 +1,12 @@
 html{
     margin: 0;
 }
+.nav a{
+    display: flex;
+    margain: 200px;
+}
+
+
 span{
     display: flex;
 }
