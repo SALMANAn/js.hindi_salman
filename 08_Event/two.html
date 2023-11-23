@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Async </title>
+</head>
+<body>
+    <h1> Salman Self Learning </h1>
+    <button id="stop">Stop</button>
+    
+
+    <script>
+       const saySalman=function(){
+        console.log("salman");
+       }
+       const changeText=function(){
+        document.querySelector('h1').innerHTML="Good learning in javascript"
+       }
+       const changMe=setTimeout(changeText,2000)
+
+       document.querySelector('#stop')
+        .addEventListener('click',function(){
+        clearTimeout(changMe)
+        console.log("STOPPED");
+       })
+    </script>
+</body>
+</html>
