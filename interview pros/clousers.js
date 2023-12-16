@@ -1,8 +1,11 @@
-function abcd(){
-    var x=12
-    return function (){
-        console.log(x);
+function outerfunction(){
+    let outerfunction="I am Outer Function";
 
+
+    function innerfunction(){
+        console.log(outerfunction);
     }
+    return innerfunction
 }
-abcd(x)
+let clouserfunction=outerfunction()
+clouserfunction()
