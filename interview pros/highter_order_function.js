@@ -2,9 +2,9 @@
 
 // 1>forEach
 // 2>filter
-// 3> map
-// 4> sort
-// 5>reduse
+// 3> map()
+// 4> sort()
+// 5>reduse()
 
 
 
