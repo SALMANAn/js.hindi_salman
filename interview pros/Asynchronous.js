@@ -18,12 +18,12 @@
     },1000)
  }
 
- function createdata( newdata){
+function createdata( newdata){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
             datas.push(newdata)
-            let error=true;
-            if (error) {
+            let error=false;
+            if (!error) {
                 resolve();
             }else{
                 reject("this is reject")
@@ -40,7 +40,7 @@
 
 //Async &Await
 
- async function start(){
+async function start(){
 await createdata({name:"kalamuddin ansari",profession:"softwere engineer"})
 getDates()
 }
