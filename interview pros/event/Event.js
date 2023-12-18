@@ -18,14 +18,13 @@ button.addEventListener("click",(Event)=>{
 })
 console.log("button");
 
-
 button.addEventListener("click" ,(Event)=>{
     Event.stopImmediatePropagation()
     console.log("button1");
 })
-let a=document.querySelector("a");
 
+let a=document.querySelector("a");
 a.addEventListener("click" ,(Event)=>{
    Event.preventDefault()
-    console.log("button");
+    console.log("button1");
  })
