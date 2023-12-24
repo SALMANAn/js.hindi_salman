@@ -75,11 +75,4 @@ function MyPrototype(name){
 }
 MyPrototype.prototype=obj
 const myproto=new MyPrototype("Salman");
-console.log(myproto.getName);
-
-
-
-
-
-
-
+console.log(myproto.getNam
