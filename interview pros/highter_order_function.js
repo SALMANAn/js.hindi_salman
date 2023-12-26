@@ -6,17 +6,13 @@
 // 4> sort()
 // 5>reduse()
 
-
-
 const  companies=[
     {name:"Google" ,category: "Product Based" ,start: 1981, end: 2004},
     {name:"Amazon" ,category: "Product Based" ,start: 1992, end: 2008},
     {name:"Paytm" ,category: "Servies Based" ,start: 1999, end: 2007},
     {name:"Corforge" ,category: "Servies Based" ,start: 1989, end: 2010},
     {name:"Mindtree" ,category: "Product Based" ,start: 1981, end: 2004}
-
 ];
-
 const ages=[10,9.9,9,7,8,9,33,12,20,16,5,34,55,65,76,87,97,12,21,31,];
 //console.log(ages);
 
