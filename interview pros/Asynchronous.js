@@ -1,6 +1,7 @@
 //Async JS Progamming
 
 //callbacks, Promises,Async & Await
+// then catch finally
 /*
 //problem create
  const datas=[
