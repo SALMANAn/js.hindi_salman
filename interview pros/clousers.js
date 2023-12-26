@@ -21,3 +21,18 @@ function Welcome(name){
 var myfunction=Welcome("sallu")
 myfunction("Welcome");
 myfunction("Hello Mr");
+
+let heroPower={
+    thor:"hammer",
+    spiderman:"Sling",
+
+    getSpiderPower:function(){
+        console.log(`Spidy power is ${this.spiderman}`);
+    }
+}
+Object.prototype.salman=function(){
+    console.log(`Salman is present in all objects`);
+}
+Array.prototype.heySalman=function(){
+    console.log(`Salman says hello `);
+}
