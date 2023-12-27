@@ -194,3 +194,34 @@ async function orderPizza() {
 }
 
 orderPizza();
+
+// function getCheese(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             const cheese="cheese"
+//            resolve(cheese)
+//            // reject("cheese in no aviable")
+//         },2000)
+//     })
+// }
+// getCheese().then((Cheese)=>{
+//     console.log("Sorry Cheese is not aviable");
+// }).catch((cheese)=>{
+//     console.log("cheese is no Avable");
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

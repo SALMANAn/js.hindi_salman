@@ -52,15 +52,15 @@ function greet(greeting,punctuation){
  
  //nction borrowingp['
  
- printDeatails.call(userDetails,"delhi","India")   //call
+//  printDeatails.call(userDetails,"delhi","India")   //call
  
- printDeatails.apply(userDetails1,["Bihar","India"])   //apply
+//  printDeatails.apply(userDetails1,["Bihar","India"])   //apply
  
- //Bind(0)
+//  //Bind(0)
  
- let newfun=printDeatails.bind(userDetails2,"Rajisthan","India")
- newfun()
- printDeatails.call(userDetails3,"Gujrat","India")   //call
+//  let newfun=printDeatails.bind(userDetails2,"Rajisthan","India")
+//  newfun()
+//  printDeatails.call(userDetails3,"Gujrat","India")   //call
 */
 /*
  const employee1={firstName:"john",lastName:"Randoson"};
@@ -108,8 +108,8 @@ function invite(greeting1, greeting2) {
 var inviteEmployee1 = invite.bind(employee1);
 var inviteEmployee2 = invite.bind(employee2);
 
-inviteEmployee1("Hello", "How are you?"); // Hello John Rodson, How are you?
-inviteEmployee2("Hello", "How are you?"); // Hello Jimmy Baily, How are you?
+inviteEmployee1("Hello", "How are you?"); 
+inviteEmployee2("Hello", "How are you?"); 
  
  
  
