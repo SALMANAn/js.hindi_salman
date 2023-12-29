@@ -28,7 +28,7 @@ promise.
 
 
 let promies=new Promise(function(resolve, reject){
-   // resolve("Salman is back")
+    //resolve("Salman is back")
     reject("kuch bhi")
 })
 promies
@@ -36,4 +36,6 @@ promies
     console.log(SuccessMessage);
 }).catch((data)=>{
     console.log("back to back",data);
+}).finally((SuccessMessage)=>{
+	console.log("kaho na pyar hota hai");
 })
