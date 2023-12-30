@@ -1,125 +1,85 @@
-document.getElementById("Submit").addEventListener("click",makerequest)
-// function makerequest(){
-//     console.log("clicked button");
-//     const promisObj=fetch("data.txt")
-//     console.log(promisObj);
-//     promisObj.then((res)=>{
-//         console.log(res);
-//         return res.text()
-//     }).then((data)=>{
-//         console.log(data);
-//     })
-// }
 
-//showing dATa in console
-// function makerequest(){
-//     console.log("Clickme Salman");
-//     fetch("data.txt")
-//     .then((res)=>{
-//         console.log(res);
-//         return res.text()
-//     }).then((data)=>{
-//         console.log(data)
-//     })
-// }
+document.getElementById("btn").addEventListener("click",makerequest)
 
 //Promise data then |Error Handling
+// function makerequest(){
+//         console.log("Button Clicked");
+//             fetch('data.json').then((res)=>{
+//                 if (!res.ok) {
+//                      throw Error(res.statusText)
+//                  }
+//                 console.log( "RES:",res);
+//                   const dt= res.json()
+//                   console.log("DT",dt);
+//                   return dt
+//             }).then((data)=>{
+//                console.log(data);
+//                console.log(data.Name);
+//                console.log(data.Job);
+    
+//              })
+//              .catch((Error)=>{console.log(Error)})
+//            }
+    
+// Promise Then data Showing Data in Browser
+
 
 // function makerequest(){
-//     console.log("Be Comment");
-//     fetch("data1.txt").then((res)=>{
+//     console.log("Please wait me!");
+//     fetch('data.json').then((res)=>{
 //         if (!res.ok) {
-//             throw Error(res.statusText)  
+//             throw Error(res.statusText)
 //         }
 //         console.log(res);
-//         return Text()
+//         return res.json()
 //     }).then((data)=>{
 //         console.log(data);
+//         document.getElementById("divdata1").innerText=data.Name
+//         document.getElementById("divdata2").innerText=data.Job
+
 //     }).catch((error)=>{
 //         console.log(error);
 //     })
 // }
 
-//Promise data then showing data in broswer
+//Async and Await |Error Handling
 
-// function makerequest(){
-//     console.log("Button Clicked");
-//     fetch("data.txt").then((res)=>{
-//         if (!res.ok) {
-//             throw error(res.statusText)
-//         }
-//         console.log(res);
-//         return res.text()
-//     }).then((data)=>{
-//         console.log(data);
-//         document.getElementById("divdata").innerText=data
-//     }).catch((error)=>{
-//         console.log(error);
-//     })
-// }
-
-
-// //Async and await
 // async function makerequest(){
-//    console.log("Button Click");
-//    const res= await fetch("data.txt")
-//    console.log(res);
-//    const data=await res.text()
-//    console.log(data);
-// }
+//          try{
+//              console.log("Button Click");
+//              const res=await fetch("data.json")
+//              if (!res.ok) {
+//               throw Error(res.statusText)
+            
+//              }
+//             console.log(res);
+//              const data=await res.json()
+//              console.log(data);
+    
+//           }catch(Error){
+//               console.log(Error);
+//           }
+//       }
 
-
-//Async and Await // error handaling
-
-//  async function makerequest(){
-//      try{
-//         console.log("Button Click");
-//         const res=await fetch("data1.txt")
-//         if (!res.ok) {
-//          throw Error(res.statusText)
-//         }
-//         console.log(res);
-//        const data=await res.text()
-//         console.log(data);
-
-//      }catch(ERROR){         
-//         console.log(Error);
-//      }
-//     }
-
-    //ASYNc and await| Showing data in web broswer
-
-    async function makerequest(){
-        try{
-            console.log("Please Wait!");
-            const res=await fetch("data.txt")
-            if (!res.ok) {
-                throw Error(res .statusText)   
-            }
-            console.log(res);
-            const data=await res.text()
-            console.log(data);
-            document.getElementById("divdata").innerText=data
-
+//Async and Await / Showing data in WEb broswer
+async function makerequest(){
+    try{
+        console.log("Please give me Water!");
+        const res=await fetch('data.json')
+        if (!res.ok) {
+            throw Error(res.statusText)
+            
         }
-        catch(error){
-            console.log(error);
+        console.log(res);
+        const data=await res.json()
+        console.log(data);
+        document.getElementById("divdata1").innerText=data.Name
+        document.getElementById("divdata2").innerText=data.Job
 
-        }
+    }catch(Error){
+        console.log(Error);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
